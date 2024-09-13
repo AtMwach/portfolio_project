@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src = "https://www.google.com/recaptcha/api.js" aync defer></script>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+     (function(){
+      emailjs.init("AYxoNakp9KjZ2ju_V");
+     })(); 
+    </script>
+</head>
+<body>
+  
+  <!--Homepage-->
+      
+  <section class="section" id="home">
+    <div class="menu-toggle"    id="menu-toggle"> 
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div> 
+
+       <nav class="nav-bar" id="nav-bar">
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav> 
+
+        <div class="links">
+          <a href="https://www.linkedin.com/feed/" target="_blank" class="linkedin-link">
+              <i><img src="images/likedin icon.png" alt="LinkedIn Icon"></i>
+          </a>
+          <a href="https://github.com/AtMwach" target="_blank" class="github-link">
+              <i><img src="images/GitHub-icon.png" alt="Github Icon"></i>
+          </a>
+          <a href="#contact" class="Email-link">
+              <i><img src="images/email.icon.jpg" alt="Email Icon"></i>
+          </a>
+        </div>
+        <div class="background-image">  
+          <div class="main1">
+              <div class="profile-pic">
+                  <img src="profile-pic.jpg" srcset="">
+              </div>
+              <div class="title">
+                  <h1>
+                  Hello, I'm Princeton Mwachala a 3rd year Undergraduate at Jkuat University.Do not hesitate to contact when ineed of my expertise</h1>
+              </div>  
+          </div>  
+          <div class="buttons">
+              <div class="styled-button1">
+                  <button id="hire-me">Hire Me</button>
+              </div>
+              <div class="styled-button2">
+                  <button id="downloadCV">Download CV</button>  
+              </div>      
+          </div>    
+        </div>
+  </section>      
+
+  <!--About Page-->
+  <section class="section" id="about">
+      <div class="container">
+        <div class="about-text">
+            <h2>About Me</h2> 
+            <p>
+             Welcome to my profile! I'm a professional with a diverse academic background. I hold a a Bachelor's degree in Computer Technology. My journey has taken me through the fascinating intersection of technology and data. I've mastered various programming languages, frameworks, and data analysis tools. My career transition demonstrates my adaptability, curiosity, and enthusiasm for learning. With an interdisciplinary background, I bring a fresh perspective to problem-solving, driving my commitment to innovation.
+            </p>
+        </div>     
+        <div id="slideshow"> 
+          <div class="entire-content">
+            <div class="content-carrousel">
+                <figure class="shadow"><img src="images/html.png" alt="HTML Icon"></figure>
+                <figure class="shadow"><img src="images/python.png" alt="Python Icon"></figure>
+                <figure class="shadow"><img src="images/css.png" alt="CSS Icon"></figure>
+                <figure class="shadow"><img src="images/sql.png" alt="SQL Icon"></figure>
+                <figure class="shadow"><img src="images/excel.png" alt="Excel Icon"></figure>
+                <figure class="shadow"><img src="images/js.jpg" alt="JavaScript Icon"></figure>
+                <figure
+                  class="shadow"><img src="images/java.png"
+                  alt="Java icon">
+                </figure>
+            </div>   
+          </div> 
+        </div>  
+     </div>
+   </section>
+
+   <!--Project page-->
+
+   <section class="section" id="projects"></section>
+        <h2>Projects</h2>
+        <div class="container">
+         <div class="box">
+            <span></span>
+            <div class="content"> 
+              <h3>Portfolio Website</h3>
+              <p>I designed a portfolio website by leveraging HTML, CSS, and JavaScript to create a comprehensive and user-friendly experience across various pages. I harnessed HTML for structure, CSS for styling and layout, and JavaScript for interactivity in designing a comprehensive portfolio website featuring a home, expertise, projects, and contact page.</p>
+              <div class="button-container">
+                <a href="https://github.com/AtMwach/portfolio_project.git" target="_blank">Read More</a>
+              </div>  
+          </div> 
+        </div> 
+      </section>    
+   
+   <!--Sections page-->
+
+  <section class="section" id="contact">
+    <div class="container5"> 
+        <h2>Contact Me</h2>
+        <div class="information">
+            <div class="form" id="form"> 
+                <form id="contact-form">  
+                    <div class="input-group">
+                        <input type="text" placeholder="Name (required)" id="name"> 
+                        <img  class="icon" src="images/name.icon.png" id="name-icon">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Subject" id="subject">
+                        <img class="icon" src="images/subject.icon.png" id="subject-icon"> 
+                    </div> 
+                    <div class="input-group">
+                        <input type="text" placeholder="Email (required)" id="email">
+                        <img class="icon" src="images/email.icon.png" id="email-icon">
+                    </div>
+                    <textarea id="message" placeholder="Message (required)"></textarea> 
+                    <div class="g-recaptcha" data-sitekey="6LfSNUEqAAAAAPtvSnyAcGC9seLANZf8GqMyy6W5--6LfSNUEqAAAAAON_C-eEdmhPrHUNF8503HiE6t0T"></div>
+                    <button type="submit" id="send-btn" onclick="sendMail()">Send</button>       
+                </form>   
+            </div>    
+        </div>    
+   </div>  
+  </section>        
+
+ <script src="script.js"></script> 
+
+</body>
+</html>
