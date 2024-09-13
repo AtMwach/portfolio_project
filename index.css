@@ -298,7 +298,7 @@ main {
 .slideshow title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 60px;
-  color: red;
+  color: rgb(187, 125, 125);
   margin: 0 auto;
   text-align: center;
   margin-top: 30%;
